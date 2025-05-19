@@ -1,0 +1,31 @@
+header{
+    background-color: transparent;
+    padding: 20px 0;
+    .navContainer{
+        // border: 1px solid red;
+        width:95%;
+        margin: 0 auto;
+        .navLinks{
+            ul{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                gap: 15px;
+                li{
+                    list-style: none;
+                    a{
+                        color: #FFFFFF;
+                        font-size: 15px;
+                        line-height: 100%;
+                        font-weight: 300;
+                        text-decoration: none;
+                        transition: .3s ease-in-out;
+                        &:hover{
+                            color: #DCF597;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
