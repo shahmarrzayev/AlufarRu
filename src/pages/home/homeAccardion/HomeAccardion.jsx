@@ -1,0 +1,70 @@
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { accardionData } from "../../../myDatas/MyData";
+import "./HomeAccardion.scss";
+
+const HomeAccardion = () => {
+  const [openId, setOpenId] = useState(1);
+  const currentItem = accardionData.find((item) => item.id === openId);
+
+  const toggleAccordion = (id) => {
+    setOpenId((prev) => (prev === id ? null : id));
+  };
+
+  return (
+    <section id="accardion">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-5">
+            <AnimatePresence mode="wait">
+              {currentItem && (
+                <motion.img
+                  key={currentItem.id}
+                  src={currentItem.img}
+                  alt={currentItem.title}
+                  className="accordionImage"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                />
+              )}
+            </AnimatePresence>
+          </div>
+
+          <div className="col-lg-7">
+            {accardionData?.map((item) => (
+              <div key={item.id} className="accordion-item">
+                <div
+                  className="accordion-header"
+                  onClick={() => toggleAccordion(item.id)}
+                >
+                  <span>{item.title}</span>
+                  <span>{openId === item.id ? "−" : "+"}</span>
+                </div>
+
+                <AnimatePresence initial={false}>
+                  {openId === item.id && (
+                    <motion.div
+                      className="accordion-content"
+                      initial={{ maxHeight: 0 }}
+                      animate={{ maxHeight: 500 }}
+                      exit={{ maxHeight: 0 }}
+                      transition={{ duration: 0.5, ease: "easeInOut" }}
+                      style={{ overflow: "hidden" }}
+                    >
+                      <div>{item.content}</div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+
+export default HomeAccardion;
