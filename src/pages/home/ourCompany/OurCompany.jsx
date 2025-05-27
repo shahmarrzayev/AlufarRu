@@ -26,6 +26,7 @@ const OurCompany = () => {
 
   return (
     <section id="OurCompany" ref={sectionRef}>
+      <div className="container"></div>
       <video loop autoPlay muted src={OurCompanyVideo}></video>
 
       <AnimatePresence>

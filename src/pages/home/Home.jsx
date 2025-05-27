@@ -5,6 +5,7 @@ import OurCompany from './ourCompany/OurCompany'
 import Projects from './projects/Projects'
 import HomeAccardion from './homeAccardion/HomeAccardion'
 import Teammate from './Teammate/Teammate'
+import Contact from './homeContact/Contact'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Projects/>
         <HomeAccardion/>
         <Teammate/>
+        <Contact/>
     </main>
   )
 }

@@ -147,3 +147,41 @@ export const teamData = [
     image: teamImage1,
   },
 ];
+
+import footerLogoA from "../assets/logos/footerA.png"
+import footerLogoL from "../assets/logos/footerL.png"
+import footerLogoU from "../assets/logos/logoU.png"
+import footerLogoF from "../assets/logos/logoF.png"
+// import footerLogoA from "../assets/logos/footerA.png"
+import footerLogoR from "../assets/logos/footerR.png"
+import footerLogoRR from "../assets/logos/logoRR.png"
+export const footerLogosData = [
+  {
+    id:1,
+    logo:footerLogoA
+  },
+  {
+    id:2,
+    logo:footerLogoL
+  },
+  {
+    id:3,
+    logo:footerLogoU
+  },
+  {
+    id:4,
+    logo:footerLogoF
+  },
+  {
+    id:5,
+    logo:footerLogoA
+  },
+  {
+    id:6,
+    logo:footerLogoR
+  },
+  {
+    id:7,
+    logo:footerLogoRR
+  },
+]
