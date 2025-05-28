@@ -38,9 +38,8 @@ const Projects = () => {
         </div>
       </div>
       <div className="container">
-        <div className="d-flex gap-2 justify-content-between">
+        <div className="projectsBoxs">
             {projects?.map((projects,idx)=>(
-           
                 <div key={idx} className="projectCard">
                     <div className="cardImage">
                         <img src={projects.image} alt="" />
@@ -51,8 +50,6 @@ const Projects = () => {
                         <p>Расположение:{projects.location}</p>
                     </div>
                 </div>
-           
-
             ))}
         </div>
       </div>

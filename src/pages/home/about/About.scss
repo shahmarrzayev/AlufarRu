@@ -4,6 +4,9 @@
     h1 {
       font-size: 110px;
       font-weight: 800;
+      @media (max-width:768px) {
+        font-size: 60px;
+      }
     }
     .border {
       width: 60%;

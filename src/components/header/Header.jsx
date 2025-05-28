@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Header.scss"
 import { NavLink } from 'react-router-dom'
+import logo from "../../assets/logos/logoGroup.png";
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header>
       <div className="navContainer">
@@ -26,6 +31,19 @@ const Header = () => {
               <NavLink>Контакт</NavLink>
             </li>
           </ul>
+        </div>
+        <div className="logo">
+        <img src={logo} alt="" />
+        </div>
+        <div className="mobileNavbar">
+           <div
+                className={`menu-toggle ${isOpen ? "open" : ""}`}
+                onClick={toggleMenu}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
         </div>
       </div>
     </header>

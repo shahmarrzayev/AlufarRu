@@ -26,7 +26,6 @@ const Footer = () => {
           </div>
           <div className="infoDiv">
             <span className="boldtext">
-              {" "}
               +90 216 504 31 43 <br />
               +90 533 708 35 55
             </span>

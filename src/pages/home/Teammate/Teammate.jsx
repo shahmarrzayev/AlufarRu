@@ -5,7 +5,7 @@ const Teammate = () => {
   return (
     <section id="teamMate">
       <div className="container">
-        <div className="d-flex gap-2 justify-content-between">
+        <div className="box">
           {teamData?.map((person) => (
             <div className="teamCard" key={person.id}>
               <div className="cardImage">
@@ -19,7 +19,7 @@ const Teammate = () => {
           ))}
         </div>
 
-        <div className="row pt-5">
+        <div className="teamInfo pt-5">
             <h3 className="teamHeader">
               Команда и лидерство
             </h3>

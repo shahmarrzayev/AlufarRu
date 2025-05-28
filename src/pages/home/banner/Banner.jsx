@@ -1,25 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Banner.scss";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import bannerImg from "../../../assets/bannerImage1.png";
 import bannerLogo from "../../../assets/logos/logoGroup.png";
 const Banner = () => {
+    const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.1, once: false });
+
   return (
     <section id="banner">
       <div className="container">
         <div className="row justify-content-between">
-          <div className="col-lg-7">
-          <motion.div
-          className="bannerImg"
-      initial={{ x: -250, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: false, amount: 0.5 }}
-    >
-       <img src={bannerImg} alt="" />
-    </motion.div>
+          <div className="col-lg-7 col-12">
+            <motion.div
+              ref={ref}
+              className="bannerImg"
+              initial={{ x: -250, opacity: 0 }}
+              animate={isInView ? { x: 0, opacity: 1 } : { x: -250, opacity: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <img src={bannerImg} alt="" />
+            </motion.div>
           </div>
-          <div className="col-lg-5">
+          <div className="col-lg-5 col-12">
             <div className="bannerContents">
               <div className="logo">
                 <img src={bannerLogo} alt="" />
