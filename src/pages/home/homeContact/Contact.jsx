@@ -3,8 +3,8 @@ import "./Contact.scss"
 const Contact = () => {
   return (
     <section id='contact'>
+       <div className="container-fluid container-xxl container-sm">
         <h2 className='contactHeader'>СВЯЗАТЬСЯ С НАМИ</h2>
-       <div className="container-fluid container-xxl">
          <form action="">
             <div className="borderedDivMini">
                 <h4>Мы с радостью ответим на ваши вопросы и обсудим ваш проект</h4>

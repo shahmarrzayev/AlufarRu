@@ -38,7 +38,25 @@
             }
         }
     }
-    @media (max-width:330px) {
+    @media (max-width:768px) {
+        .overlay{
+            .overlayText{
+                width: 80%;
+                h3{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                button{
+                    width: 40%;
+                    padding: 15px 0 ;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    @media (max-width:426px) {
         .overlay{
             .overlayText{
                 width: 100%;

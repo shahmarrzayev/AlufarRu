@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    // gap: 10px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -35,57 +35,55 @@
   }
   .projectsBoxs {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
     gap: 1%;
-    .projectCard {
-      width: 32%;
-      transition: 1s ease;
-      .cardImage {
+  }
+  .projectCard {
+    width: 32%;
+    transition: 1s ease;
+    .cardImage {
+      width: 100%;
+      height: 320px;
+      transition: .3s ease-in;
+      img {
+        object-fit: cover;
         width: 100%;
-        height: 320px;
-        transition: .3s ease-in;
-        img {
-          object-fit: cover;
-          width: 100%;
-          height: 100%;
-        }
+        height: 100%;
       }
-      .cardContent {
-        padding: 10px 0 0;
-        h4 {
-          font-size: 25px;
-          font-weight: 800;
-          line-height: 100%;
-        }
-        p {
-          font-size: 17px;
-          font-weight: 500;
-          line-height: 100%;
-          margin: 0;
-        }
+    }
+    .cardContent {
+      padding: 10px 0 0;
+      h4 {
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 100%;
       }
-      &:hover {
-          width: 50%;
+      p {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 100%;
+        margin: 0;
       }
+    }
+    &:hover {
+        width: 50%;
     }
   }
   
-  @media (max-width:330px) {
+  @media (max-width:768px) {
     padding: 20px 0;
-      .projectsHeaders{
+     .projectsHeaders{
         h2{
-          font-size: 40px;
-        }
-        .border{
-          height: 50px;
+          font-size: 60px;
         }
         p{
-          font-size: 20px;
+          font-size: 25px;
         }
       }
       .projectsBoxs{
         gap: 15px;
+        flex-wrap: wrap;
         .projectCard{
           overflow: hidden;
           width: 100%;
@@ -98,5 +96,21 @@
           }
         }
       }
+  }
+
+  @media (max-width:426px) {
+    padding: 20px 0;
+      .projectsHeaders{
+        h2{
+          font-size: 40px;
+        }
+        .border{
+          height: 50px;
+        }
+        p{
+          font-size: 20px;
+        }
+      }
+
   }
 }

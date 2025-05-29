@@ -8,7 +8,7 @@ const About = () => {
   const controlsSvg = useAnimation();
   const controlsTxt = useAnimation();
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.5 });
+  const isInView = useInView(ref, { amount: 0.1 });
 
   useEffect(() => {
     if (isInView) {
@@ -31,7 +31,7 @@ const About = () => {
               <div className="texts">
                 <motion.div
                   className="aboutLoadingTxt"
-                  initial={{ height: "100%" }}
+                  initial={{ height: "100%" }}  
                   animate={controlsTxt}
                   transition={{ duration: 1.5, ease: "easeInOut" }}
                 />

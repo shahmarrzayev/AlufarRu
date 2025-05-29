@@ -5,6 +5,7 @@ const Teammate = () => {
   return (
     <section id="teamMate">
       <div className="container">
+
         <div className="box">
           {teamData?.map((person) => (
             <div className="teamCard" key={person.id}>
@@ -27,6 +28,7 @@ const Teammate = () => {
               Нас более 120 человек со всего мира, движимых смелыми идеями и разнообразными перспективами. Мастерство, сервис и эффективность движут нас вперед, и мы рассматриваем наше агентство как место, где сталкиваются наши общие ценности.
             </p>
         </div>
+        
       </div>
     </section>
   );

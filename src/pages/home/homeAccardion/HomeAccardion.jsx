@@ -15,7 +15,7 @@ const HomeAccardion = () => {
     <section id="accardion">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5">
+          <div className="col-lg-5 col-12">
             <AnimatePresence mode="wait">
               {currentItem && (
                 <motion.img
@@ -31,10 +31,9 @@ const HomeAccardion = () => {
               )}
             </AnimatePresence>
           </div>
-
-          <div className="col-lg-7">
+          <div className="col-lg-7 col-12 ">
             {accardionData?.map((item) => (
-              <div key={item.id} className="accordion-item">
+              <div key={item.id} className="accordionItem">
                 <div
                   className="accordion-header"
                   onClick={() => toggleAccordion(item.id)}

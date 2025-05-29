@@ -6,7 +6,7 @@
     .box{
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         gap: 1%;
         .teamCard{
           width: 24%;
@@ -56,9 +56,44 @@
         }
     }
 
-    @media (max-width:340px) {
+    @media (max-width:768px) {
         .container{
             .box{
+                flex-wrap: wrap;
+                .teamCard{
+                    width:48% ;
+                    overflow: hidden;
+                    .cardImage{
+                        height: 380px;
+                    }
+                    &:hover{
+                        width: 100%;
+                        .cardImage{
+                            
+                            img{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .teamInfo{
+            flex-direction: column;
+            .teamHeader{
+                font-size: 45px;
+                max-width: 100%;
+            }
+            .teamParagraph{
+                max-width: 100%;
+                font-size: 15px;
+            }
+        }
+    }
+    @media (max-width:425px) {
+        .container{
+            .box{
+                flex-wrap: wrap;
                 .teamCard{
                     width:100% ;
                     overflow: hidden;

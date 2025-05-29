@@ -5,15 +5,15 @@ import bannerImg from "../../../assets/bannerImage1.png";
 import bannerLogo from "../../../assets/logos/logoGroup.png";
 const Banner = () => {
     const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.1, once: false });
+  const isInView = useInView(ref, { amount: 0.1});
 
   return (
-    <section id="banner">
+    <section id="banner" ref={ref}>
       <div className="container">
         <div className="row justify-content-between">
-          <div className="col-lg-7 col-12">
+          <div className="col-lg-7 col-sm-12 col-md-12">
             <motion.div
-              ref={ref}
+              
               className="bannerImg"
               initial={{ x: -250, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : { x: -250, opacity: 0 }}

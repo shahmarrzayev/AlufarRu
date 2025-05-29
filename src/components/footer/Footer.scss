@@ -45,7 +45,36 @@ footer{
             }
         }
     }
-    @media (max-width:340px) {
+    @media (max-width:768px) {
+        .formContactInfo{
+            .infoDiv{
+                flex-wrap: wrap;
+                border: none;
+                padding: 8px 25px;
+                .boldtext{
+                    font-size: 15px;
+                    max-width: 100%;
+                    width: 100%;
+                }
+                .text{
+                    display: none;
+                    font-size: 12px;
+                }
+            }
+        }
+        .footerLogo{
+            .logoDiv{
+                width: calc(100%/8);
+                height: 30px;
+                object-fit: contain;
+            }
+            .miniImage{
+                width: calc(100%/8);
+                height: 100%;
+            }
+        }
+    }
+    @media (max-width:425px) {
         .formContactInfo{
             .infoDiv{
                 flex-wrap: wrap;

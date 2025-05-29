@@ -6,7 +6,7 @@ const Footer = () => {
       const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.5, once: false });
   return (
-    <footer ref={ref}>
+    <footer >
       <div className="container-fluid container-xxl">
         <div className="formContactInfo">
           <div className="infoDiv">
@@ -32,7 +32,7 @@ const Footer = () => {
             <span className="text">КОНТАКТНЫЙ НОМЕР</span>
           </div>
         </div>
-        <div className="footerLogo">
+        <div className="footerLogo" ref={ref}>
           {footerLogosData.map((item, index) => {
             return (
               <motion.div

@@ -5,7 +5,7 @@ import { projects } from "../../../myDatas/MyData";
 const Projects = () => {
   const controlsTxt = useAnimation();
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.5 });
+  const isInView = useInView(ref, { amount: 0.1 });
 
   useEffect(() => {
     if (isInView) {
