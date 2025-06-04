@@ -1,28 +1,36 @@
 import projectImage1 from "../assets/images/project1.jpg";
 import projectImage2 from "../assets/images/project2.jpg";
 import projectImage3 from "../assets/images/project31.jpg";
+import projectImage4 from "../assets/images/project4.jpg";
 
 export const projects = [
   {
     id: 1,
     image: projectImage1,
-    name: "ГОСТИНИЦА ISTANBUL HILTON",
-    desc: "ИЗОЛИРОВАННЫЕ ОКОННЫЕ СИСТЕМЫ WT 75 РАЗДВИЖНЫЕ СИСТЕМЫ HST-60  ",
-    location: "Баку, Азербайджан",
+    name: "Grand Central",
+    desc: "",
+    location: "Grand Central Parkway, Queence, New York, USA",
   },
   {
     id: 2,
     image: projectImage2,
-    name: "ABSHERON AUTOMOBILE ЦЕНТРАЛЬНЫЙ",
-    desc: "Передние системы - FT 50",
-    location: "Баку, Азербайджан",
+    name: "Trylon Tower",
+    desc: "",
+    location: "Rego Park at 98-81 Queens Boulevard, New York, USA",
   },
   {
     id: 3,
     image: projectImage3,
-    name: "IVY Garden Hotel",
-    desc: "WT 60 ИЗОЛИРОВАННЫЕ ДВЕРНЫЕ И ОКОННЫЕ СИСТЕМЫ.",
-    location: "Баку, Азербайджан",
+    name: "Phantom, Moscow Russia",
+    desc: "",
+    location: "Москва, Малая Сухаревская пл-дь, дом 6",
+  },
+   {
+    id: 4,
+    image: projectImage4,
+    name: "Georgia real estate",
+    desc: "",
+    location: "Тбилиси, Грузия",
   },
 ];
 // import accardionImage from "../assets/images/accardionImage.png";
