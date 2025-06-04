@@ -15,7 +15,7 @@ const Home = () => {
         <OurCompany/>
         <Projects/>
         <HomeAccardion/>
-        <Teammate/>
+        {/* <Teammate/> */}
         <Contact/>
     </main>
   )
