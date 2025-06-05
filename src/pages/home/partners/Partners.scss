@@ -1,0 +1,38 @@
+#partners{
+    .partnersFlexDiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .sectionTexts{
+            width: 35%;
+            .partnersText{
+                font-size: 20px;
+                display: block;
+            }
+            
+        }
+        .swiperBoxs{
+            width: 65%;
+            .partLogo{
+                width: 100%;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+    }
+    @media (max-width:768px) {
+        .partnersFlexDiv{
+            flex-direction: column;
+            .sectionTexts{
+                width: 100%;
+                .partnersText{
+                    text-align: center;
+                }
+            }
+            .swiperBoxs{
+                width: 100%;
+            }
+        }
+    }
+}

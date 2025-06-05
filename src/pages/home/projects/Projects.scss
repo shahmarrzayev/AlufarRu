@@ -70,6 +70,15 @@
         width: 50%;
     }
   }
+  @media (max-width:900px) {
+    .projectsBoxs{
+      gap: 15px;
+      flex-wrap: wrap;
+      .projectCard{
+        width: 48%;
+      }
+    }
+  }
   
   @media (max-width:768px) {
     padding: 20px 0;

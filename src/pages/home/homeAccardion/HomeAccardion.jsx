@@ -39,7 +39,7 @@ const HomeAccardion = () => {
                   onClick={() => toggleAccordion(item.id)}
                 >
                   <span>{item.title}</span>
-                  <span>{openId === item.id ? "−" : "+"}</span>
+                  {/* <span>{openId === item.id ? "−" : "+"}</span> */}
                 </div>
 
                 <AnimatePresence initial={false}>

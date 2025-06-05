@@ -6,6 +6,7 @@ import Projects from './projects/Projects'
 import HomeAccardion from './homeAccardion/HomeAccardion'
 import Teammate from './Teammate/Teammate'
 import Contact from './homeContact/Contact'
+import Partners from './partners/Partners'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Banner/>
         <About/>
         <OurCompany/>
+        <Partners/>
         <Projects/>
         <HomeAccardion/>
         {/* <Teammate/> */}

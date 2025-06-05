@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo from "../../assets/logos/logoGroup.png";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,22 +14,22 @@ const Header = () => {
         <div className="navLinks">
           <ul>
             <li>
-              <NavLink>О нас</NavLink>
+              <HashLink smooth to="/#homeAbout">О нас</HashLink>
             </li>
             <li>
-              <NavLink>Наша компания</NavLink>
+              <HashLink smooth to="/#OurCompany">Наша компания</HashLink>
             </li>
             <li>
-              <NavLink>Портфель</NavLink>
+              <HashLink smooth to="/#projects">Портфель</HashLink>
             </li>
             <li>
-              <NavLink>Системы</NavLink>
+              <HashLink smooth to="/#accardion">Системы</HashLink>
             </li>
+            {/* <li>
+              <HashLink smooth to="/#teamMate">Команда</HashLink>
+            </li> */}
             <li>
-              <NavLink>Команда</NavLink>
-            </li>
-            <li>
-              <NavLink>Контакт</NavLink>
+              <HashLink smooth to="/#contact">Контакт</HashLink>
             </li>
           </ul>
         </div>
@@ -47,26 +48,26 @@ const Header = () => {
 
           
             <div className={`mobileNavItems ${isOpen ? "active" : ""}`}>
-              <ul>
-                <li>
-                  <NavLink>О нас</NavLink>
-                </li>
-                <li>
-                  <NavLink>Наша компания</NavLink>
-                </li>
-                <li>
-                  <NavLink>Портфель</NavLink>
-                </li>
-                <li>
-                  <NavLink>Системы</NavLink>
-                </li>
-                <li>
-                  <NavLink>Команда</NavLink>
-                </li>
-                <li>
-                  <NavLink>Контакт</NavLink>
-                </li>
-              </ul>
+            <ul>
+            <li>
+              <HashLink smooth to="/#homeAbout">О нас</HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="/#OurCompany">Наша компания</HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="/#projects">Портфель</HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="/#accardion">Системы</HashLink>
+            </li>
+            {/* <li>
+              <HashLink smooth to="/#teamMate">Команда</HashLink>
+            </li> */}
+            <li>
+              <HashLink smooth to="/#contact">Контакт</HashLink>
+            </li>
+          </ul>
             </div>
           
         </div>

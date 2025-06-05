@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Banner.scss";
 import { motion, useInView } from "framer-motion";
-import bannerImg from "../../../assets/bannerImage1.png";
+import bannerImg from "../../../assets/bannerImage11.png";
 import bannerLogo from "../../../assets/logos/logoGroup.png";
 const Banner = () => {
     const ref = useRef(null);
