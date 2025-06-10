@@ -21,7 +21,7 @@ const logos = [
 const Partners = () => {
   return (
     <section id='partners'>
-         <div className="bg-dark text-white py-1 my-5">
+         <div className="text-white py-1 my-5">
       <div className="container">
         <div className="partnersFlexDiv">
 
@@ -34,6 +34,7 @@ const Partners = () => {
             modules={[Autoplay]}
             slidesPerView={4}
             spaceBetween={20}
+            speed={2000}
             breakpoints={{
                 425: {
                   slidesPerView: 2,
@@ -48,7 +49,7 @@ const Partners = () => {
                   spaceBetween: 50,
                 },
               }}
-            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            autoplay={{ delay: 0, disableOnInteraction: false }}
             loop={true}
           >
             {logos.map((logo, index) => (
