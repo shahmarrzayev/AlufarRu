@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { accardionData } from "../../../myDatas/MyData";
+import playIcon from "../../../assets/logos/playIcon.png";
 import "./HomeAccardion.scss";
 
 const HomeAccardion = () => {
@@ -35,10 +36,10 @@ const HomeAccardion = () => {
             {accardionData?.map((item) => (
               <div key={item.id} className="accordionItem">
                 <div
-                  className="accordion-header"
+                  className="accordionHeader"
                   onClick={() => toggleAccordion(item.id)}
                 >
-                  <span>{item.title}</span>
+                  <span><img className="miniLogo" src={playIcon} alt="" /> {item.title}</span>
                   {/* <span>{openId === item.id ? "−" : "+"}</span> */}
                 </div>
 
