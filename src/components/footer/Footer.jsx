@@ -14,7 +14,7 @@ const Footer = () => {
             <span className="text">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</span>
           </div>
           <div className="infoDiv">
-            <span className="boldtext">info@alufar.az</span>
+            <span className="boldtext">@alufar.aluminum</span>
             <span className="text">СОЦИАЛЬНЫЕ СЕТИ</span>
           </div>
           <div className="infoDiv">
@@ -26,8 +26,7 @@ const Footer = () => {
           </div>
           <div className="infoDiv">
             <span className="boldtext">
-              +90 216 504 31 43 <br />
-              +90 533 708 35 55
+             + 7 930 307 58 31 <br /> + 7 916 56 84
             </span>
             <span className="text">КОНТАКТНЫЙ НОМЕР</span>
           </div>

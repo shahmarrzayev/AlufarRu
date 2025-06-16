@@ -27,7 +27,7 @@ const Banner = () => {
               <div className="logo">
                 <img src={bannerLogo} alt="" />
               </div>
-              <h4>Мы поможем вам внедрить</h4>
+              <h4>Формируем пространство. Двигаем границы.</h4>
             </div>
           </div>
         </div>
