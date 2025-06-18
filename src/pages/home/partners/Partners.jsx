@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./Partners.scss"
-import partnerLogo2 from "../../../assets/logos/partnersLogo22.png"
-import partnerLogo3 from "../../../assets/logos/partnersLogo33.png"
-import partnerLogo1 from "../../../assets/logos/partnersLogo11.png"
-import partnerLogo4 from "../../../assets/logos/partnersLogo44.png"
-import partnerLogo5 from "../../../assets/logos/partnersLogo22.png"
+import partnerLogo2 from "../../../assets/logos/partnersLogo2.png"
+import partnerLogo3 from "../../../assets/logos/partnersLogo3.png"
+import partnerLogo1 from "../../../assets/logos/partnersLogo1.png"
+import partnerLogo4 from "../../../assets/logos/partnersLogo4.jpg"
+import partnerLogo5 from "../../../assets/logos/AGC_Logo.svg"
 
 const logos = [
   { src: partnerLogo1, alt: "Hans Visser" },
