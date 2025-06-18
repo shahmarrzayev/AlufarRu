@@ -6,7 +6,7 @@ import "./Partners.scss"
 import partnerLogo2 from "../../../assets/logos/partnersLogo2.png"
 import partnerLogo3 from "../../../assets/logos/partnersLogo3.png"
 import partnerLogo1 from "../../../assets/logos/partnersLogo1.png"
-import partnerLogo4 from "../../../assets/logos/partnersLogo4.jpg"
+import partnerLogo4 from "../../../assets/logos/partnersLogo4.png"
 import partnerLogo5 from "../../../assets/logos/AGC_Logo.svg"
 
 const logos = [
