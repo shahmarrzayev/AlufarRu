@@ -27,17 +27,17 @@ const Projects = () => {
                 transition={{ duration: 1.1, ease: "easeInOut" }}
               />
               <h2>Более 250 завершенных проектов</h2>
-              <div className="border"></div>
-              <p>
+              {/* <div className="border"></div> */}
+              {/* <p>
                 Проектирование и строительство автосалонов требует особого
                 опыта. Наша команда знакома со стандартами и техническими
                 требованиями, характерными для данной отрасли.{" "}
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container mt-5">
         <div className="projectsBoxs">
             {projects?.map((projects,idx)=>(
                 <div key={idx} className="projectCard">

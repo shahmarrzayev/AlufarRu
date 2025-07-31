@@ -33,13 +33,13 @@ const Contact = () => {
           (error) => {
             window.alert("HATA");
             console.error("Email gönderme hatası:", error);
-            // Swal.fire({
-            //   position: "top-end",
-            //   icon: "error",
-            //   title: "Error",
-            //   showConfirmButton: false,
-            //   timer: 1500,
-            // });
+            Swal.fire({
+              position: "top-end",
+              icon: "error",
+              title: "Error",
+              showConfirmButton: false,
+              timer: 1500,
+            });
           }
         );
     },
@@ -47,10 +47,10 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="container-fluid container-xxl container-sm">
-        <h2 className="contactHeader">СВЯЗАТЬСЯ С НАМИ</h2>
+        <h2 className="contactHeader"> СВЯЖИТЕСЬ С НАМИ</h2>
         <form onSubmit={formik.handleSubmit} action="">
           <div className="borderedDivMini">
-            <h4>Мы с радостью ответим на ваши вопросы и обсудим ваш проект</h4>
+            <h4>Если у вас есть вопросы по нашей продукции, индивидуальном решении, поддержке или сотрудничестве, обратитесь к нам</h4>
           </div>
           <div className="borderedDivMini">{/* .empty */}</div>
           <div className="borderedDivMini">

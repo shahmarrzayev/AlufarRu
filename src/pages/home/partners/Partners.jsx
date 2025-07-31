@@ -26,8 +26,8 @@ const Partners = () => {
         <div className="partnersFlexDiv">
 
         <div className='sectionTexts'>
-          <h6 className="mb-0 partnersText">Некоторые из наших</h6>
-          <strong className='partnersText'>исключительных клиентов</strong>
+          {/* <h6 className="mb-0 partnersText">Некоторые из наших</h6> */}
+          <strong className='partnersText'>Ключевые партнеры</strong>
         </div>
         <div className="swiperBoxs">
           <Swiper

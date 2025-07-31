@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container-fluid container-xxl">
         <div className="formContactInfo">
           <div className="infoDiv">
-            <span className="boldtext">info@alufar.az</span>
+            <span className="boldtext">info@alufar.ru</span>
             <span className="text">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</span>
           </div>
           <div className="infoDiv">
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           <div className="infoDiv">
             <span className="boldtext">
-             + 7 930 307 58 31 <br /> + 7 916 56 84
+             +7 (499) 321-52-09 
             </span>
             <span className="text">КОНТАКТНЫЙ НОМЕР</span>
           </div>
@@ -35,7 +35,7 @@ const Footer = () => {
           {footerLogosData.map((item, index) => {
             return (
               <motion.div
-                key={item.id + isInView} // burda `key` dəyişir hər görünəndə
+                key={item.id + isInView} 
                 className="logoDiv"
                 initial={{ y: -250, opacity: 0 }}
                 animate={isInView ? { y: 0, opacity: 1 } : {}}

@@ -29,7 +29,7 @@ const Header = () => {
               <HashLink smooth to="/#teamMate">Команда</HashLink>
             </li> */}
             <li>
-              <HashLink smooth to="/#contact">Контакт</HashLink>
+              <HashLink smooth to="/#contact">Контакты</HashLink>
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@ const Header = () => {
               <HashLink smooth to="/#teamMate">Команда</HashLink>
             </li> */}
             <li>
-              <HashLink smooth to="/#contact">Контакт</HashLink>
+              <HashLink smooth to="/#contact">Контакты</HashLink>
             </li>
           </ul>
             </div>

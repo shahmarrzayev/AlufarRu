@@ -11,7 +11,7 @@ const Banner = () => {
     <section id="banner" ref={ref}>
       <div className="container">
         <div className="row justify-content-between">
-          <div className="col-lg-7 col-sm-12 col-md-12">
+          <div className="col-lg-6 col-sm-12 col-md-12">
             <motion.div
               
               className="bannerImg"
@@ -22,12 +22,14 @@ const Banner = () => {
               <img src={bannerImg} alt="" />
             </motion.div>
           </div>
-          <div className="col-lg-5 col-12">
+          <div className="col-lg-6 col-12">
             <div className="bannerContents">
               <div className="logo">
                 <img src={bannerLogo} alt="" />
               </div>
-              <h4>Формируем пространство. Двигаем границы.</h4>
+              <h4>Формируем пространство.
+                <br />
+Двигаем границы.</h4>
             </div>
           </div>
         </div>
