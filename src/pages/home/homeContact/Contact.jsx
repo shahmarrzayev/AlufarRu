@@ -50,7 +50,7 @@ const Contact = () => {
         <h2 className="contactHeader"> СВЯЖИТЕСЬ С НАМИ</h2>
         <form onSubmit={formik.handleSubmit} action="">
           <div className="borderedDivMini">
-            <h4>Если у вас есть вопросы по нашей продукции, индивидуальном решении, поддержке или сотрудничестве, обратитесь к нам</h4>
+            <h4>Если у вас есть вопросы по нашей продукции, индивидуальном решении, поддержке или сотрудничестве, обратитесь к нам:</h4>
           </div>
           <div className="borderedDivMini">{/* .empty */}</div>
           <div className="borderedDivMini">
