@@ -45,6 +45,10 @@ const Footer = () => {
             );
           })}
         </div>
+        <div className="footerCopyRight">
+          <span>2025</span>
+          <span>MADE BY <a href="https://looptech.az/">LOOPTECH</a></span>
+        </div>
       </div>
     </footer>
   );

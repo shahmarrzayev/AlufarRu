@@ -45,6 +45,17 @@ footer{
             }
         }
     }
+    .footerCopyRight{
+        padding: 15px ;
+        border-top:1px solid #FFFFFF21 ;
+        display: flex;
+        justify-content: space-between;
+        span{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
     @media (max-width:768px) {
         .formContactInfo{
             .infoDiv{
